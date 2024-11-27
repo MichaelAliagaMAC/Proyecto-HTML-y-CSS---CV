@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #807e7e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 5%;
+}
+
+.habilidades i {
+    font-size: 0.8em;
+    color: black;
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+
+.experiencia i {
+    font-size: 0.8em;
+    color: #fff;
+    background: #00aae4;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em; 
+}
+
+.container {
+    background-color: #1f253d;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.cabecera::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.contenedor_foto_perfil {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #00aae4;
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor_foto_perfil img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nombre_puesto {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenido_cv {
+    display: flex;
+    justify-content: space-between; 
+}
+
+section {
+    width: 48%; 
+}
+
+.habilidades {
+    background-color: #00aae4;
+    padding: 5%;
+}
+
+.habilidades ul {
+    margin-left: 5%;
+}
+
+.carta_presentacion {
+    text-align: justify;
+}
+
+.grafico {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+.sector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform-origin: left;
+}
+
+.habilidad {
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.experiencia {
+    padding: 5%;
+}
+
+.nombre_empresa {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.año_puesto {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+
+.descripcion_puesto {
+    margin-top: 3%;
+    text-align: justify;
+}
+
+/* Se uiliza media queries para hacer responsivo el CV */
+@media (max-width: 768px) { 
+    .contenido_cv { 
+        flex-direction: column; 
+    } 
+
+    .cabecera{
+        flex-direction: column;
+    }
+
+    .contenedor_foto_perfil{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px ;
+    }
+    
+    section { 
+        width: 100%; 
+        margin-bottom: 20px; 
+    } 
+    
+    .contenedor_foto_perfil { 
+        width: 150px; 
+        height: 150px; 
+        margin: 0 auto; 
+    } 
+    
+    .nombre_puesto { 
+        text-align: center; 
+        margin: 0; 
+    } 
+
+    .nombre_puesto h1 { 
+        font-size: 2.5em;
+    }
+
+    .nombre_puesto h2{ 
+        font-size: 1.2em;
+    }
+} 
+
+@media (max-width: 480px) { 
+    .container { 
+        width: 95%; 
+        margin: 0 auto; 
+    } 
+}
+
+.card {
+    margin-bottom: 20px; /* Margen inferior para separar las tarjetas de otros elementos */
+}
+  
+.btn-primary {
+    background-color: #00aae4;
+    border-color: black;
+}
+  
+.btn-primary:hover {
+    background-color: red;
+    border-color: black;
+}
+  
+.card-title, .card-text {
+    color: #000; /* texto visible en el card*/
+}
+
+.flag-icon {
+    margin-right: 10px; /* Espacio entre la bandera y el texto */
+    vertical-align: middle; 
+}
+
+.bateria {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    height: 25px;
+}
+  
+.nivel {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 2s ease-in-out;
+}
+  
+.porcentaje {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+  
+  
+  
+  
